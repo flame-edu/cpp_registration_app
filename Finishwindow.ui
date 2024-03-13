@@ -14,22 +14,50 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>250</x>
-      <y>260</y>
-      <width>171</width>
-      <height>61</height>
+      <x>310</x>
+      <y>140</y>
+      <width>141</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Segoe UI</family>
-      <pointsize>18</pointsize>
-      <italic>false</italic>
-      <bold>true</bold>
+      <pointsize>14</pointsize>
      </font>
+    </property>
+    <property name="text">
+     <string>Поздравляю.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>210</y>
+      <width>411</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ты прошел квест и удачно авторизировался.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>300</y>
+      <width>291</width>
+      <height>51</height>
+     </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(170, 0, 0);
@@ -37,61 +65,7 @@ color: rgb(255, 255, 255);
 font: 700 18pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
-     <string>СЮДА</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>190</y>
-      <width>571</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Добро пожаловать в самую лучшую программу авторизации.</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>170</x>
-      <y>270</y>
-      <width>81</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Нажми</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>430</x>
-      <y>270</y>
-      <width>181</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>чтобы начать</string>
+     <string>Выход здесь.)))</string>
     </property>
    </widget>
   </widget>

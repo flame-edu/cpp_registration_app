@@ -18,6 +18,9 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    Finishwindow.ui \
+    Loginwindow.ui \
+    Registrationwindow.ui \
     mainwindow.ui
 
 TRANSLATIONS += \
