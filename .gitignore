@@ -71,3 +71,5 @@ Thumbs.db
 *.dll
 *.exe
 
+# build directory for server application
+build-cpp_registration_server-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/

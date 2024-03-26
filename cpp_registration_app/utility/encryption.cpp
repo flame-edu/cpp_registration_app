@@ -1,5 +1,7 @@
 #include "encryption.h"
 
+Encryption::Encryption(QObject *parent){}
+
 QString Encryption::encrypt(string text, int shift) {
     QString result = "";
 

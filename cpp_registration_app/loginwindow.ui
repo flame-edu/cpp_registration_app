@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>MainWindow</class>
- <widget class="QMainWindow" name="MainWindow">
+ <class>LoginWindow</class>
+ <widget class="QDialog" name="LoginWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,14 +13,22 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="centralwidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>801</width>
+     <height>455</height>
+    </rect>
+   </property>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>160</y>
-      <width>481</width>
-      <height>215</height>
+      <x>200</x>
+      <y>140</y>
+      <width>401</width>
+      <height>175</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -38,7 +46,7 @@
         <string notr="true"/>
        </property>
        <property name="text">
-        <string>Регистрация</string>
+        <string>Авторизация</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -55,7 +63,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Логин:</string>
+          <string>Email:</string>
          </property>
         </widget>
        </item>
@@ -81,28 +89,7 @@
         </widget>
        </item>
        <item row="2" column="1">
-        <widget class="QLineEdit" name="passwordEdit_1">
-         <property name="font">
-          <font>
-           <pointsize>14</pointsize>
-          </font>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label_4">
-         <property name="font">
-          <font>
-           <pointsize>14</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Повторите пароль:</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QLineEdit" name="lineEdit_3">
+        <widget class="QLineEdit" name="passwordEdit">
          <property name="font">
           <font>
            <pointsize>14</pointsize>
@@ -115,26 +102,26 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
-        <widget class="QPushButton" name="loginButton">
+        <widget class="QPushButton" name="registButton">
          <property name="styleSheet">
           <string notr="true">color: rgb(170, 0, 0);
 background-color: rgb(167, 255, 170);
 font: 14pt &quot;Segoe UI&quot;;</string>
          </property>
          <property name="text">
-          <string>Уже есть аккаунт?</string>
+          <string>Регистрация</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="registButton">
+        <widget class="QPushButton" name="loginButton">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(139, 185, 255);
 color: rgb(170, 0, 0);
 font: 14pt &quot;Segoe UI&quot;;</string>
          </property>
          <property name="text">
-          <string>Зарегестрироваться</string>
+          <string>Войти</string>
          </property>
         </widget>
        </item>
@@ -153,7 +140,16 @@ font: 14pt &quot;Segoe UI&quot;;</string>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>3</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

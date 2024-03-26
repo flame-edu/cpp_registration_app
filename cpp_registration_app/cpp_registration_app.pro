@@ -8,25 +8,23 @@ CONFIG += c++17
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+include(./utility/utility.pri)
+
 SOURCES += \
-    encryption.cpp \
+    finishwindow.cpp \
+    loginwindow.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    registrationwindow.cpp
 
 HEADERS += \
-    encryption.h \
-    mainwindow.h
+    finishwindow.h \
+    loginwindow.h \
+    mainwindow.h \
+    registrationwindow.h
 
 FORMS += \
-    Finishwindow.ui \
-    Loginwindow.ui \
-    Registrationwindow.ui \
     mainwindow.ui
-
-TRANSLATIONS += \
-    cpp_registration_app_ru_RU.ts
-CONFIG += lrelease
-CONFIG += embed_translations
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

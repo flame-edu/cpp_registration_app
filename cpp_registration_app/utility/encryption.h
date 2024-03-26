@@ -11,15 +11,16 @@
 using namespace std;
 
 class Encryption : public QObject {
-	Q_OBJECT
-	
+    Q_OBJECT
+
 public:
-	Encryption(QObject *parent = nullptr);
-	~Encryption();
+    Encryption(QObject *parent = nullptr);
+    ~Encryption() {exit(1);};
     static QString encrypt(string text, int shift); // функция шифрования пароля (шифр Цезаря)
 private:
-	
+
 
 };
 
 #endif // ENCRYPTION_H
+
