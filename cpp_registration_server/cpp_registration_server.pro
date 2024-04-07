@@ -1,4 +1,5 @@
 QT -= gui
+QT += core network sql
 
 CONFIG += c++17 console
 CONFIG -= app_bundle
@@ -8,11 +9,13 @@ CONFIG -= app_bundle
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 HEADERS += \
-        tcpconnection.h
+        tcpconnection.h \
+        dbworker.h
 
 SOURCES += \
         main.cpp \
-        tcpconnection.cpp
+        tcpconnection.cpp \
+        dbworker.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
